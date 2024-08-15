@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import getStripe from "@/utils/get-stripe";
 import { useRouter } from "next/navigation";
 import { useSearchParams } from "next/navigation";
+import { Box, CircularProgress, Container, Typography } from "@mui/material";
 
 const ResultPage = () => {
     const router = useRouter()
@@ -84,3 +85,4 @@ const ResultPage = () => {
       )
 
   }
+ export default ResultPage
