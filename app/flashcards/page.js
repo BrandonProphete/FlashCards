@@ -6,11 +6,12 @@ import { collection, doc, getDoc, writeBatch, setDoc } from 'firebase/firestore'
 
 import { useState, useEffect, use } from 'react'
 import { db } from '@/firebase'
-import { Card, CardActionArea, CardContent, Container, Grid, Typography } from '@mui/material'
+import { Box, Card, CardActionArea, CardContent, Container, Grid, Typography } from '@mui/material'
 
 export default function Flashcards(){
     const { isLoaded, isSignedIn, user } = useUser()
     const [flashcards, setFlashcards] = useState([])
+    const [loading, setLoading] = useState(true);
     const router = useRouter()
 
     useEffect(() => {
@@ -35,7 +36,7 @@ export default function Flashcards(){
    const handleCardClick = (id) => {
     router.push(`/flashcard?id=${id}`)
   }
-    
+
   return (
     <Container maxWidth="md">
       <Grid container spacing={3} sx={{ mt: 4 }}>

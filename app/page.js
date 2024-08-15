@@ -38,7 +38,7 @@ export default function Home() {
       <AppBar position="static">
       <Toolbar>
       <Typography variant="h6" style={{flexGrow: 1}}>
-      Flashcard SaaS
+      Biz Buddy
     </Typography>
     <SignedOut>
       <Button color="inherit" href="/sign-in">Login</Button>
@@ -54,10 +54,10 @@ export default function Home() {
         textAlign: 'center', my: 4
       }}>
       <Typography variant="h2" component="h1" gutterBottom>
-    Welcome to Flashcard SaaS
+    Welcome to Biz Buddy
         </Typography>
         <Typography variant="h5" component="h2" gutterBottom>
-    The easiest way to make flashcards from your text.
+    The easiest way to make flashcards for study needs!
         </Typography>
         <Button variant="contained" color="primary" sx={{mt: 2, mr: 2}} href="/generate">
     Get Started
