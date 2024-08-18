@@ -12,7 +12,7 @@ export default function Home() {
    const handleSubmit = async () => {
     const checkoutSession = await fetch('/api/checkout_sessions', {
       method: 'POST',
-      headers: { origin: 'https://localhost:3000' }, //Will have to change later when deployed on Vercel
+      headers: { origin: 'https://flash-cards-blue.vercel.app' }, //Will have to change later when deployed on Vercel
     })
     const checkoutSessionJson = await checkoutSession.json()
 
